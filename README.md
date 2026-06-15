@@ -37,6 +37,7 @@ Each team member must:
 
 3. Write at least two Python files with the following code concepts
 implemented
+
  ○ Static and dynamic variables
  ○ User input
  ○ File creation
@@ -51,10 +52,10 @@ implemented
    Python app 2 audit.py
    Checks your vehicle specs to qualify you for an extended warranty
 
-4. Commit their work to their branch
-5. Push their branch to GitHub
-6. Open a Pull Request (PR)
-7. Participate in resolving merge conflicts (if any)
+5. Commit their work to their branch
+6. Push their branch to GitHub
+7. Open a Pull Request (PR)
+8. Participate in resolving merge conflicts (if any)
 
 mistake 1;
  collaberators must be given access to the repo from github, before they can add to the repo.
