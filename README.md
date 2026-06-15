@@ -2,18 +2,24 @@
  The design goal of this lab is to demonstrate the ability to clone a repository, create a feature branch, make code changes and succesfully recognize and mitigate common git mistakes.
 
 Technical Requirements
-Repository Setup
+Repository Setup:
+
 ● Create a brand-new GitHub repository from scratch (no templates).
+
 ● Repository must include:
-○ .README.md
-○ .gitignore (appropriate for Python)
-○ At least 2 Python files (.py) per student
+
+ ○ .README.md
+
+ ○ .gitignore (appropriate for Python)
+
+ ○ At least 2 Python files (.py) per student
 
 
 Each team member must:
 1. Clone the repository locally
 2. Create their own Git branch
-  ○ Naming convention (recommended):
+   
+   ○ Naming convention (recommended):
 
   feature/Chris-function
 
@@ -38,13 +44,13 @@ Each team member must:
 3. Write at least two Python files with the following code concepts
 implemented
 
- ○ Static and dynamic variables
+  ○ Static and dynamic variables
  
- ○ User input
+  ○ User input
  
- ○ File creation
+  ○ File creation
  
- ○ Conditional Logic
+  ○ Conditional Logic
 
    Python app 1 app.py
    A simple Vehicle registration Calculator. 
