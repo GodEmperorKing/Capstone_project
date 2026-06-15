@@ -15,25 +15,25 @@ Each team member must:
 2. Create their own Git branch
   ○ Naming convention (recommended):
 
-  feature/<firstname>-function
+  feature/Chris-function
 
  Creating a Branch Using Command Line
 
   Clone the Repository: If you haven't already, clone the repository to your local machine using the command:
 
-   git clone <repository-url>
+   git clone repository-url
    
    Navigate to the Repository Directory: Change to the repository directory using the cd command:
 
-   cd <repository-directory>
+   cd repository-directory
    
    Create a New Branch: Use the git checkout command to create and switch to a new branch:
 
-   git checkout -b <your-new-branch-name>
+   git checkout -b your-new-branch-name
    
    Push the Branch to GitHub: Push the new branch to the remote repository using:
 
-   git push -u origin <your-new-branch-name>
+   git push -u origin your-new-branch-name
 
 3. Write at least two Python files with the following code concepts
 implemented
@@ -43,8 +43,8 @@ implemented
  ○ Conditional Logic
 
    Python app 1 app.py
-   A simple Vehicle registration Calculator 
-   Request Make, Model, Registration Date 
+   A simple Vehicle registration Calculator. 
+   Request Make, Model, Registration Date. 
    Condidtional = If age is greater than two years past the current Date
    Return = Registration expired
 
