@@ -39,8 +39,11 @@ Each team member must:
 implemented
 
  ○ Static and dynamic variables
+ 
  ○ User input
+ 
  ○ File creation
+ 
  ○ Conditional Logic
 
    Python app 1 app.py
