@@ -20,9 +20,9 @@ if vehicle_year < 1995:
 else:
     print("This vehicle is less than 30 years old.")
     
-file = open("customer_id.txt", "w")
+file = open("customer-id.txt", "w")
 file.write("Customer Name: " + first_name + " " + last_name + "\n")
 file.write("Customer ID: " + customer_id + "\n")
 file.close()
 
-print("Customer ID saved to customer_id.txt")
+print("Customer ID saved to customer-id.txt")

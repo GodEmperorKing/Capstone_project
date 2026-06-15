@@ -23,9 +23,9 @@ else:
 
 print("Your t-shirt color is", shirt_color)
 
-file = open("shirt_color.txt", "w")
+file = open("shirt-color.txt", "w")
 file.write("Employee Last Name: " + last_name + "\n")
 file.write("Shirt Color: " + shirt_color + "\n")
 file.close()
 
-print("Shirt color saved to shirt_color.txt")
+print("Shirt color saved to shirt-color.txt")
