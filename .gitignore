@@ -52,4 +52,4 @@ terraform.rc
 rpm_packages/
 *.zip
 
-venv/
+venv/notes.txt
