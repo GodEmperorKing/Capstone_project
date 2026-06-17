@@ -70,7 +70,7 @@ mistake 1;
  collaberators must be given access to the repo from github, before they can add to the repo.
  From the repo go to settings---->Collaborators: Enter the Email, assoc with each collabs git account: add
  Git will send an email that has to be accepted
- 
+
 Mistake2;
  User github account was not authenticated
  If you're using HTTPS with GitHub, the person pushing usually needs a Personal Access Token (PAT) for their own GitHub account.
