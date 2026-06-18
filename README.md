@@ -54,11 +54,14 @@ implemented
 
    Python app 1 app.py
    A simple Vehicle registration Calculator. 
-   Request Make, Model, Registration Date. 
+   Request Make, Model, Registration Date.
+
    Condidtional = If age is greater than two years past the current Date
+
    Return = Registration expired
 
    Python app 2 audit.py
+   
    Checks your vehicle specs to qualify you for an extended warranty
 
 5. Commit their work to their branch
