@@ -24,17 +24,20 @@ print("3.Multiply")
 print("4.Divide")
 print(" ")
 print("Scintific calculations")
-print("5. Logarithm")
+print("5.Tangent")
+print("6.Cosine")
+print("7.Sine")
 
 while True:
     # take input from the user
-    choice = input("Enter choice(1/2/3/4/5/6): ")
+    choice = input("Enter choice(1/ 2/ 3/ 4/ 5/ 6/ 7): ")
 
     # check if choice is one of the four options
     if choice in ('1', '2', '3', '4', '5', '6', '7'):
         try:
             num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
+            if choice in ('1', '2', '3', '4'):
+                num2 = float(input("Enter second number: "))
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
