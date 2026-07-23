@@ -1,7 +1,7 @@
 resource "aws_instance" "fortressmaximus-ec2" {
   ami           = "ami-09968b16214ef62ce"   #this image is from eu-west-3
   instance_type = "t3.micro"
-  #key_name =""
+  key_name = "TF_key"
   subnet_id = aws_subnet.public-subnet-eu-west-3a.id
   vpc_security_group_ids = [aws_security_group.ping-sg.id,aws_security_group.fortressmaximus-sg.id]
   associate_public_ip_address = true
@@ -12,3 +12,5 @@ resource "aws_instance" "fortressmaximus-ec2" {
     Name = "fortressmaximus-ec2"
   }
 }
+
+ ### added a local .pem file as the key name 

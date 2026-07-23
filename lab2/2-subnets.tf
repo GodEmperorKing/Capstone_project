@@ -6,7 +6,8 @@ resource "aws_subnet" "public-subnet-eu-west-3a" {
   # step 2: get VPC ID
   # step 3: add VPC ID into vpc_id argument in this subnet
   # which VPC to creste subnet in
-  cidr_block = "10.109.1.0/24"
+    ### I made a change of the IP address from 109.x.x.x to 107.x.x.x
+  cidr_block = "10.107.1.0/24"
   availability_zone = "eu-west-3a"
   map_public_ip_on_launch = true
 
@@ -17,7 +18,7 @@ resource "aws_subnet" "public-subnet-eu-west-3a" {
 
 resource "aws_subnet" "public-subnet-eu-west-3b" {
   vpc_id = aws_vpc.fortressmaximus-vpc.id        # which vpc to create
-  cidr_block = "10.109.2.0/24"
+  cidr_block = "10.107.2.0/24"
   availability_zone = "eu-west-3b"
   map_public_ip_on_launch = true
 
@@ -28,7 +29,7 @@ resource "aws_subnet" "public-subnet-eu-west-3b" {
 
 resource "aws_subnet" "public-subnet-eu-west-3c" {
   vpc_id = aws_vpc.fortressmaximus-vpc.id         # which vpc to create
-  cidr_block = "10.109.3.0/24"
+  cidr_block = "10.107.3.0/24"
   availability_zone = "eu-west-3c"
   map_public_ip_on_launch = true
 
@@ -41,7 +42,7 @@ resource "aws_subnet" "public-subnet-eu-west-3c" {
 
 resource "aws_subnet" "private-subnet-eu-west-3a" {
   vpc_id = aws_vpc.fortressmaximus-vpc.id       # which vpc to create
-  cidr_block = "10.109.11.0/24"
+  cidr_block = "10.107.11.0/24"
   availability_zone = "eu-west-3a"
 
   tags = {
@@ -51,7 +52,7 @@ resource "aws_subnet" "private-subnet-eu-west-3a" {
 
 resource "aws_subnet" "private-subnet-eu-west-3b" {
   vpc_id = aws_vpc.fortressmaximus-vpc.id        # which vpc to create
-  cidr_block = "10.109.12.0/24"
+  cidr_block = "10.107.12.0/24"
   availability_zone = "eu-west-3b"
 
   tags = {
@@ -61,7 +62,7 @@ resource "aws_subnet" "private-subnet-eu-west-3b" {
 
 resource "aws_subnet" "private-subnet-eu-west-3c" {
   vpc_id = aws_vpc.fortressmaximus-vpc.id        # which vpc to create
-  cidr_block = "10.109.13.0/24"
+  cidr_block = "10.107.13.0/24"
   availability_zone = "eu-west-3c"
 
   tags = {

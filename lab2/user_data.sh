@@ -23,24 +23,21 @@ vpc=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" -s http://169.254.169.254/lates
 # Get hostname
 hostname_value=$(hostname -f)
 
+
+### part 1 of file snd directory modifications
+
 BASE_DIR=/var/www/html
 mkdir -p $BASE_DIR/backup
-mkdir -p $BASE_DIR/archive
-mkdir -p $BASE_DIR/content
-mkdir -p $BASE_DIR/utils
-mkdir -p $BASE_DIR/credentials
 
-#cp $BASE_DIR/* $BASE_DIR/backup/.
+### create empty files
+touch $BASE_DIR/backup/techstuff.txt
+touch $BASE_DIR/backup/techstuff2.txt
+touch $BASE_DIR/backup/techstuff3.txt
+touch $BASE_DIR/backup/techstuff4.txt
 
-cat > /var/www/html/index.html << EOF
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EC2 CAPSTONE DEMO</title>
-    <style>
-        * {
+### build the css file
+cat > /var/www/html/styles.css << EOF
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -169,8 +166,17 @@ cat > /var/www/html/index.html << EOF
             width: 250px;
             height: 345px;
         }
-        
-    </style>
+EOF
+
+### build the html file with include for the styles.css file
+cat > /var/www/html/index.html << EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2 CAPSTONE DEMO</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
   <body>
     <div class="container">
@@ -185,16 +191,8 @@ cat > /var/www/html/index.html << EOF
                 <div class="grid-template-rows"><img src="https://i.pinimg.com/736x/b6/a8/66/b6a86625f0f5fbd3be1d222a10f986b6.jpg" class="beauty"></div>
                 <div class="grid-template-rows"><img src="https://i.pinimg.com/1200x/98/ac/43/98ac436a4fc9e9172f9457810564f408.jpg" class="beauty"></div>
                 <div class="grid-template-rows"><img src="https://i.pinimg.com/1200x/cc/9e/cd/cc9ecd6b6003bc999418eea4f6e0f469.jpg" class="beauty"></div>
-                <!-- <div class="grid-template-rows"><img src="./fe7fdcc4aed9bdf1315d562903f88ed2.jpg" class="beauty"></div> -->
             </div>
         </div>
-        <!-- <div class="base-position">
-            <div class="grid-container">
-                <div class="grid-template-rows"><img src="./3540a38d20fd9f8df4d4cf58f82b7357.jpg" class="beauty"></div>
-                <div class="grid-template-rows"><img src="./8dca74d03ec966ba76782d47d0aa2270.jpg" class="beauty"></div>
-                <div class="grid-template-rows"><img src="./f6373e6aed13f3b70ed8c7517b17cede.jpg" class="beauty"></div>
-            </div>
-        </div> -->
         <div class="details">
             <h3>About Me</h3>
             <div class="detail-item">
@@ -224,10 +222,8 @@ cat > /var/www/html/index.html << EOF
                     initialization by writing a  <br/>startup script that configures an
                     EC2 instance to host a front-facing static website.
                 I omplemented a Bash scripting to automate server setup.</p>
-</span>
                 
             </div>
-           
         </div>
         <div class="details">
             <h3>Contact</h3>
@@ -244,6 +240,26 @@ cat > /var/www/html/index.html << EOF
 </body>
 </html>
 EOF
+
+
+### part 2 of directory management on the Amazon Linux Server
+cp "$BASE_DIR"/index.html /home/ec2-user/index.html
+cp "$BASE_DIR"/styles.css /home/ec2-user/styles.css
+
+### due to Amazon Linux ec2-user permissions, a regular user cannot copy fioles into 
+#### either root or /var/www/html paths, so the chown will allow my ec2 user to
+#### control the directory
+sudo chown -R ec2-user:ec2-user /var/www/html/backup
+
+### testing permissions to figure out what allows mw t move files
+mv /home/ec2-user/index.html "$BASE_DIR"/backup/index2.html
+mv /home/ec2-user/styles.css "$BASE_DIR"/backup/styles.css
+
+### create empty dorectories
+mkdir -p $BASE_DIR/archive
+mkdir -p $BASE_DIR/content
+mkdir -p $BASE_DIR/utils
+mkdir -p $BASE_DIR/credentials
 
 # Clean up the temp files
 rm -f /tmp/local_ipv4 /tmp/az /tmp/macid

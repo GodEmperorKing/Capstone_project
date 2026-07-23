@@ -11,3 +11,5 @@ resource "aws_vpc" "fortressmaximus-vpc" {
     Planet = "Cybertron"
   }
 }
+
+### I made a change of the IP address from 109.x.x.x to 107.x.x.x
