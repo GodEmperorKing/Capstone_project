@@ -53,3 +53,9 @@ rpm_packages/
 *.zip
 
 venv/notes.txt
+
+__pycache__/
+*.pyc
+notes.txt
+debug_log
+test_output.tmp
