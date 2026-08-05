@@ -1,37 +1,37 @@
 #!/bin/bash
 
-#Update packages
+
 yum update -y
 amazon-linux-extras install nginx1 -y || yum install -y nginx
 systemctl start nginx
 systemctl enable nginx
 
-#website directories
+
 mkdir -p /usr/share/nginx/html/css
 mkdir -p /usr/share/nginx/html/images
 
-#Server directories
+
 mkdir -p /home/ec2-user/backup
 mkdir -p /home/ec2-user/log-archive
 mkdir -p /home/ec2-user/content
 mkdir -p /home/ec2-user/utils
 mkdir -p /home/ec2-user/credentials
 
-#Dummy log files
+
 touch /home/ec2-user/log-archive/log1.txt
 touch /home/ec2-user/log-archive/log2.txt
 touch /home/ec2-user/log-archive/log3.txt
 touch /home/ec2-user/log-archive/log4.txt
 
-#files
+
 touch /home/ec2-user/content/content.txt
 touch /home/ec2-user/utils/utils.txt
 touch /home/ec2-user/credentials/credentials.txt
 
-#Download a JPEG image
+
 curl -L "https://wallpaperaccess.com/full/8351167.jpg" -o /usr/share/nginx/html/images/cloud.jpg
 
-#Create HTML page
+
 cat <<EOF > /usr/share/nginx/html/index.html
 <!DOCTYPE html>
 <html>
@@ -73,7 +73,7 @@ cat <<EOF > /usr/share/nginx/html/index.html
 </html>
 EOF
 
-# Create CSS file
+
 cat <<EOF > /usr/share/nginx/html/css/style.css
 body {
     background-color: lightblue;
@@ -110,8 +110,8 @@ footer {
 }
 EOF
 
-# Backup website
+
 cp -r /usr/share/nginx/html /home/ec2-user/backup/
 
-# Restart NGINX
+
 systemctl restart nginx
