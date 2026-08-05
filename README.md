@@ -23,7 +23,7 @@ Each team member must:
    
    ○ Naming convention (recommended):
 
-  feature/Chris-function
+  feature/Name-function
 
 
 
