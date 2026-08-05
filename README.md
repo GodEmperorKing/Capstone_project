@@ -82,7 +82,7 @@ Troubleshooting;
 
 
 
-Chris Capstone Labs
+Chris Capstone Labs:
 
    Python app 1 Registration_validator.py
 
@@ -103,7 +103,7 @@ Chris Capstone Labs
    Both apps are Initiated By app.py
 
    EC2 startup script
-   
+
             Updates linux packages
             Installs and updates NGINX
             Initializes NGINX 
