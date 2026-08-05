@@ -67,7 +67,7 @@ implemented
 
 8. Participate in resolving merge conflicts (if any)
 
-Troublechooting;
+Troubleshooting;
  collaberators must be given access to the repo from github, before they can add to the repo.
  From the repo go to settings---->Collaborators: Enter the Email, assoc with each collabs git account: add
  Git will send an email that has to be accepted
@@ -103,14 +103,14 @@ Chris Capstone Labs
    Both apps are Initiated By app.py
 
    EC2 startup script
-    Updates linux packages
-    Installs and updates NGINX
-    Initializes NGINX 
-    Makes Website directories
-    Makes Server directories
-    Makes Dummy log files
-    Writes Test Files to Server directories
-    Downloads a background image
-    Creates and HTML and CSS file in seperate files
-    Creates an HTML Webpage with defined css styling
-    Creates a server backup of the webpage
+      Updates linux packages
+      Installs and updates NGINX
+      Initializes NGINX 
+      Makes Website directories
+      Makes Server directories
+      Makes Dummy log files
+      Writes Test Files to Server directories
+      Downloads a background image
+      Creates and HTML and CSS file in seperate files
+      Creates an HTML Webpage with defined css styling
+      Creates a server backup of the webpage
