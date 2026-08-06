@@ -1,4 +1,4 @@
-# app.py
+# app1.py
 from helper import generate_story, save_story_to_file
 
 print("Let's create a silly story together!")
