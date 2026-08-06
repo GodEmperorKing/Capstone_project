@@ -1,0 +1,1 @@
+# Screenshots for git operations
