@@ -1,22 +1,17 @@
-# app1.py
-from helper import generate_story, save_story_to_file
+from Ext_vehicle_warranty import run_warranty
+from Registration_Validator import run_registration
 
-print("Let's create a silly story together!")
-print("Answer the questions and I will make a funny sentence.\n")
+print("=== Extended Warranty Check ===")
+warranty_result = run_warranty()
+print(warranty_result)
 
-animal = input("Enter an animal (like dog or cat): ")
-food = input("Enter a food you like (like pizza or apples): ")
-place = input("Enter a fun place (like park or school): ")
+print("\n=== Vehicle Registration Check ===")
+registration_result = run_registration()
+print(registration_result)
 
-final_story = generate_story(animal, food, place)
+print("\n=== Summary ===")
+print(warranty_result)
+print(registration_result)
 
-print("\nHere is your story:")
-print("-" * 20)
-print(final_story)
-print("-" * 20)
 
-save_choice = input("\nWould you like to save this story to a text file? (yes/no): ")
-if save_choice.lower() == "yes":
-    save_story_to_file(final_story)
-else:
-    print("What a silly adventure! The end.")
+    
