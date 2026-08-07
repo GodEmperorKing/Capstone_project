@@ -1,5 +1,16 @@
 from PyScientificCalculations import tan, sin, cos
 
+import os
+
+
+if os.path.exists("HamptonUrocks.txt"):
+    os.remove("HamptonURocks.txt")
+
+with open('HamptonURocks.txt', 'w') as file:
+    file.write("The Pirates are on Fire!")
+    file.close()
+print("File HamptonURocks.txt created and text written successfully.")
+
 # This function adds two numbers
 def add(x, y):
     return x + y
@@ -16,19 +27,19 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-print(" ")
-print("Scintific calculations")
-print("5.Tangent")
-print("6.Cosine")
-print("7.Sine")
-
 while True:
+    print("Select operation.")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply")
+    print("4.Divide")
+    print(" ")
+    print("Scintific calculations")
+    print("5.Tangent")
+    print("6.Cosine")
+    print("7.Sine")
+
+
     # take input from the user
     choice = input("Enter choice(1/ 2/ 3/ 4/ 5/ 6/ 7): ")
 
