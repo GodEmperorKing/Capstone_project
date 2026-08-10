@@ -9,7 +9,7 @@ dnf install -y python3
 mkdir -p /var/www/simple-site
 
 # Create a basic webpage
-cat > /var/www/simple-site/index.html <<'HTML'
+cat > /var/www/simple-site/.html <<'HTML'
 <!DOCTYPE html>
 <html lang="en">
 <head>
