@@ -134,3 +134,13 @@ Screenshots are located in Eirik-Artifacts/1.2.1_Visuals.
 Lab2 has a verbose writeup located in its directory, Eirik-lab2.
 
 ---
+
+### Samael Capstone Labs:
+
+**Python App: Story Time (app1.py)**
+This is an interactive Python application that prompts the user for inputs such as an animal, a food item, and a place to generate a fun, silly story. It also gives the option to save the generated story to a text file.
+
+**Launch Instructions:**
+This application is initiated by running `app1.py`. 
+To launch, run the following command in your terminal:
+`python3 app1.py`
