@@ -26,26 +26,6 @@ Each team member must:
   feature/Name-function
 
 
-
-
- Creating a Branch Using Command Line
-
-  Clone the Repository: If you haven't already, clone the repository to your local machine using the command:
-
-               git clone repository-url
-   
-   Navigate to the Repository Directory: Change to the repository directory using the cd command:
-
-               cd repository-directory
-   
-   Create a New Branch: Use the git checkout command to create and switch to a new branch:
-
-               git checkout -b your-new-branch-name
-   
-   Push the Branch to GitHub: Push the new branch to the remote repository using:
-
-               git push -u origin your-new-branch-name
-
 3. Write at least two Python files with the following code concepts
 implemented
 
@@ -67,6 +47,24 @@ implemented
 
 8. Participate in resolving merge conflicts (if any)
 
+Creating a Branch Using Command Line
+
+  Clone the Repository: If you haven't already, clone the repository to your local machine using the command:
+
+               git clone repository-url
+   
+   Navigate to the Repository Directory: Change to the repository directory using the cd command:
+
+               cd repository-directory
+   
+   Create a New Branch: Use the git checkout command to create and switch to a new branch:
+
+               git checkout -b your-new-branch-name
+   
+   Push the Branch to GitHub: Push the new branch to the remote repository using:
+
+               git push -u origin your-new-branch-name
+
 Troubleshooting;
  collaberators must be given access to the repo from github, before they can add to the repo.
  From the repo go to settings---->Collaborators: Enter the Email, assoc with each collabs git account: add
@@ -81,8 +79,8 @@ Troubleshooting;
  They authenticate using their own credentials when pushing.
 
 
-
-Chris Capstone Labs:
+----
+### Chris Capstone Labs
 
    Python app 1 Registration_validator.py
 
@@ -101,5 +99,8 @@ Chris Capstone Labs:
             Return = You Qualify for an extended Warranty
 
    Both apps are Initiated By app.py
+
+   Lab2 EC2 Script is in Chris_lab2 folder
+   Screenshots and Artifacts are in Chris_Artifacts folder
 
   
