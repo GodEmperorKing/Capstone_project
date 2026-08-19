@@ -1,4 +1,6 @@
 # Capstone_project
+# Lab1: Edit line 2 of file for feature/jerry-function
+# Lab1: Update line 2 of README.md for feature/jerry-merge-conflict branch
  The design goal of this lab is to demonstrate the ability to clone a repository, create a feature branch, make code changes and succesfully recognize and mitigate common git mistakes.
 
 Technical Requirements
@@ -104,3 +106,43 @@ Troubleshooting;
    Screenshots and Artifacts are in Chris_Artifacts folder
 
   
+  
+
+---
+
+### Eirik's Lab 1 project
+
+My project (located in the branch feature/eirik-function) is broken down by labs. In lab1, where we are now, we have my Python project, a 7 function calculator. 
+
+The calculator is a combination of  regular arithmetic calculator with 3 scienfitific computations featured.
+-  Addition
+- Subtraction
+- Multiplication
+- Division
+
+Scientific functions
+- Tangent
+- Sine
+- Cosine
+
+The calculator is split between two files, PythonCalc.py and PythonScientific.py. PythonCalc serves as the main body and executor of the application. A menu is presented to show the user the options available to them.
+
+The latter are in their own file (PythonScientific.py) and are called via function from PythonCalc.
+
+I added app.py to make a subprocess call to PythonCalc.py. The file app.py generates conflicts. One solution is to utilize my app5.py per group suggestion and that fixed the merge issues for the main branch.
+
+Screenshots are located in Eirik-Artifacts/1.2.1_Visuals.
+
+Lab2 has a verbose writeup located in its directory, Eirik-lab2.
+
+---
+
+### Samael Capstone Labs:
+
+**Python App: Story Time (app1.py)**
+This is an interactive Python application that prompts the user for inputs such as an animal, a food item, and a place to generate a fun, silly story. It also gives the option to save the generated story to a text file.
+
+**Launch Instructions:**
+This application is initiated by running `app1.py`. 
+To launch, run the following command in your terminal:
+`python3 app1.py`
