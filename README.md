@@ -136,7 +136,7 @@ Lab2 has a verbose writeup located in its directory, Eirik-lab2.
 
 ---
 
-### Samael Capstone Labs:
+### Samael Capstone Lab-1:
 
 **Python App: Story Time (app1.py)**
 This is an interactive Python application that prompts the user for inputs such as an animal, a food item, and a place to generate a fun, silly story. It also gives the option to save the generated story to a text file.
