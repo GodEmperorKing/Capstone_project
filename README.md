@@ -146,6 +146,6 @@ This application is initiated by running `app1.py`.
 To launch, run the following command in your terminal:
 `python app1.py`
 
-*Python App 2: Greeting & Access Logger (app11.py)*
+**Python App 2: Greetings & Access Logger (app11.py)**
 An interactive utility that prompts for a username and role, applies access controls via conditional logic, and appends a timestamped session record to a text log file.
-*Launch Instructions:* `python app3.py`
+*Launch Instructions:* `python app11.py`
