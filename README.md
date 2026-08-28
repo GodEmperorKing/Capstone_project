@@ -136,7 +136,7 @@ Lab2 has a verbose writeup located in its directory, Eirik-lab2.
 
 ---
 
-### Samael Capstone Labs:
+### Samael_Lab-1:
 
 **Python App: Story Time (app1.py)**
 This is an interactive Python application that prompts the user for inputs such as an animal, a food item, and a place to generate a fun, silly story. It also gives the option to save the generated story to a text file.
@@ -144,4 +144,8 @@ This is an interactive Python application that prompts the user for inputs such 
 **Launch Instructions:**
 This application is initiated by running `app1.py`. 
 To launch, run the following command in your terminal:
-`python3 app1.py`
+`python app1.py`
+
+**Python App 2: Greetings & Access Logger (app11.py)**
+An interactive utility that prompts for a username and role, applies access controls via conditional logic, and appends a timestamped session record to a text log file.
+*Launch Instructions:* `python app11.py`
